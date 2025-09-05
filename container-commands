@@ -115,4 +115,7 @@ Docker rmi :- it will delete only unused images
 Docker rmi -f :- it will delete unsed images
 Docker rmi $(docker images -q): - to delete all images at time
 docker rm $(docker ps -aq): it will delete all stopped containers
+Yashwardhan Kashyap (Unverified)
+
+
 docker rm -f  $(docker ps -aq): it will delete all stopped n running containers.
