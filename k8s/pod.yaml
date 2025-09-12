@@ -1,0 +1,27 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ipl-pod
+  namespace: murali-ns
+spec:
+  containers:
+    - name: ipl
+      image: muralisocial123/ipl-app:v1
+      ports:
+        - containerPort: 3000
+
+
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: netflix-pod
+  namespace: murali-ns
+spec:
+  containers:
+    - name: netflix
+      image: muralisocial123/netflix-2025:latest
+      ports:
+        - containerPort: 80
